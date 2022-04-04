@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/mtn_ones_values"
+        android:title="@string/mtn_ones"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/mtn_bills_values"
+        android:title="@string/mtn_bills"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/syriatel_ones_values"
+        android:title="@string/syriatel_ones"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/syriatel_bills_values"
+        android:title="@string/syriatel_bills"
+        app:showAsAction="always|withText" />
+</menu>

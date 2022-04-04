@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_sim_one_settings"
+            android:icon="@drawable/ic_sim"
+            android:title="@string/menu_sim_one" />
+        <item
+            android:id="@+id/nav_sim_all_settings"
+            android:icon="@drawable/ic_sim"
+            android:iconTint="@color/colorPrimaryDark"
+            android:title="@string/menu_sim_all"
+            tools:ignore="UnusedAttribute" />
+        <item
+            android:id="@+id/nav_syriatel_code_for_deliver_settings"
+            android:icon="@drawable/ic_phonelink"
+            android:title="@string/syriatel_code_for_deliver" />
+        <item
+            android:id="@+id/nav_users_loans"
+            android:icon="@drawable/users"
+            android:title="@string/users_loan_list" />
+
+        <item
+            android:id="@+id/nav_user_code"
+            android:icon="@drawable/ic_phone_enabled"
+            android:title="@string/user_code" />
+
+        <item
+            android:id="@+id/nav_mobile_permit"
+            android:icon="@drawable/ic_verified"
+            android:title="@string/verify_mobile_permit" />
+
+        <item
+            android:id="@+id/nav_benefits"
+            android:icon="@drawable/ic_money"
+            android:title="@string/benefits" />
+    </group>
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@android:drawable/ic_menu_share"
+            android:title="@string/share_app_with_friends" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="@string/logout" />
+    </group>
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_call_us"
+            android:icon="@android:drawable/sym_call_outgoing"
+            android:title="@string/call_us" />
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/ic_info"
+            android:title="@string/about_us" />
+    </group>
+</menu>

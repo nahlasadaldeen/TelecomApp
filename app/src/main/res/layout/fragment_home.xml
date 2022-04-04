@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgCompany"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_horizontal"
+                            android:contentDescription="@string/company"
+                            android:visibility="invisible"
+                            tools:src="@tools:sample/avatars" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+
+                            <EditText
+                                android:id="@+id/editTextPhone"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="9"
+                                android:background="@drawable/rounded"
+                                android:digits="0987654321"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="@string/mobile_number1"
+                                android:imeOptions="actionNext"
+                                android:inputType="phone"
+                                android:maxLength="10"
+                                tools:ignore="Autofill,LabelFor" />
+
+                            <ImageView
+                                android:id="@+id/btnUsers"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:contentDescription="@string/person"
+                                android:src="@drawable/ic_person" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+
+                            <EditText
+                                android:id="@+id/editTextBalance"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_marginEnd="4dp"
+                                android:layout_weight="4"
+                                android:background="@drawable/rounded"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="@string/balance"
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+                                tools:ignore="Autofill,LabelFor" />
+
+                            <EditText
+                                android:id="@+id/editTextPrice"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="4"
+                                android:background="@drawable/rounded"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="@string/price"
+                                android:imeOptions="actionDone"
+                                android:inputType="number"
+                                tools:ignore="Autofill,LabelFor" />
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:contentDescription="@string/person"
+                                android:src="@drawable/ic_more_vertical" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btnTransferBalance"
+                                style="@style/MaterialAlertDialog.MaterialComponents.Title.Icon"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/balance_transfer"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold"
+                                app:cornerRadius="8dp"
+                                app:icon="@drawable/ic_call"
+                                app:iconGravity="textStart"
+                                app:iconTint="@android:color/white" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btnTransferBills"
+                                style="@style/MaterialAlertDialog.MaterialComponents.Title.Icon"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:backgroundTint="#4caf50"
+                                android:gravity="center"
+                                android:text="@string/bill_transfer"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold"
+                                app:cornerRadius="8dp"
+                                app:icon="@drawable/ic_call"
+                                app:iconGravity="textStart"
+                                app:iconTint="@android:color/white" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_horizontal">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btnReCall"
+                                style="@style/MaterialAlertDialog.MaterialComponents.Title.Icon"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:backgroundTint="#4caf50"
+                                android:gravity="center_horizontal"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold"
+                                app:cornerRadius="8dp"
+                                app:icon="@drawable/ic_replay"
+                                app:iconGravity="start"
+                                app:iconTint="@android:color/white" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="8dp"
+                            android:gravity="center_horizontal">
+
+                            <com.google.android.material.checkbox.MaterialCheckBox
+                                android:id="@+id/btnByLate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/by_late"
+                                android:textColor="#F00"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_margin="8dp"
+                    android:background="@color/colorPrimaryDark" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="4dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnLog"
+                            style="@style/MaterialAlertDialog.MaterialComponents.Title.Icon"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="4dp"
+                            android:layout_weight="2"
+                            android:backgroundTint="@android:color/white"
+                            android:gravity="center"
+                            android:text="@string/log"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            app:cornerRadius="8dp"
+                            app:icon="@drawable/ic_list"
+                            app:iconGravity="textStart"
+                            app:iconTint="#4caf50" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnSaveNum"
+                            style="@style/MaterialAlertDialog.MaterialComponents.Title.Icon"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:backgroundTint="@android:color/white"
+                            android:gravity="center"
+                            android:text="@string/save_num"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            app:cornerRadius="8dp"
+                            app:icon="@android:drawable/ic_menu_add"
+                            app:iconGravity="textStart"
+                            app:iconTint="#4caf50" />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnSelectBalance"
+                            style="@style/MaterialAlertDialog.MaterialComponents.Title.Icon"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="4dp"
+                            android:layout_weight="2"
+                            android:backgroundTint="@android:color/white"
+                            android:gravity="center"
+                            android:text="@string/select_for_client"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            app:cornerRadius="8dp"
+                            app:icon="@drawable/ic_published"
+                            app:iconGravity="textStart"
+                            app:iconTint="#4caf50" />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/pnlCenter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnShowCenterDetails"
+                            style="@style/MaterialAlertDialog.MaterialComponents.Title.Icon"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="4dp"
+                            android:layout_weight="2"
+                            android:backgroundTint="#00aaff"
+                            android:gravity="center"
+                            android:text="@string/center_details"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            app:cornerRadius="8dp"
+                            app:icon="@drawable/ic_business_center"
+                            app:iconGravity="textStart"
+                            app:iconTint="@android:color/white" />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    style="@style/Base.Widget.AppCompat.ProgressBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:indeterminate="true"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnFixedEnable"
+                        style="@style/MaterialAlertDialog.MaterialComponents.Title.Icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#00aaff"
+                        android:gravity="center"
+                        android:text="@string/fixed_enable"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        app:cornerRadius="8dp"
+                        app:iconGravity="textStart"
+                        app:iconTint="@android:color/white" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnSync"
+                        style="@style/MaterialAlertDialog.MaterialComponents.Title.Icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#00aaff"
+                        android:gravity="center"
+                        android:text="@string/syc_with_server"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        app:cornerRadius="8dp"
+                        app:iconGravity="textStart"
+                        app:iconTint="@android:color/white" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/lblAllAttemptsCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/all_attempts_count"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtAllAttemptsCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:text="@string/attempt_num"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/lblStillAttemptsCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/still_attempts_count"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtStillAttemptsCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:text="@string/attempt_num"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/lblMustEnable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/must_activate"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnRequestAttempts"
+                        style="@style/MaterialAlertDialog.MaterialComponents.Title.Icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#0000ff"
+                        android:gravity="center"
+                        android:text="@string/request_attempts"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        app:cornerRadius="8dp"
+                        app:iconGravity="textStart"
+                        app:iconTint="@android:color/white" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        style="@style/BottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="40dp"
+        android:background="?android:attr/windowBackground"
+        android:foreground="?attr/selectableItemBackground"
+        android:theme="@style/BottomNavigationView"
+        app:itemBackground="@color/tab_color"
+        app:itemTextColor="@android:color/black"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationViewValues"
+        style="@style/BottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="?android:attr/windowBackground"
+        android:clickable="false"
+        android:foreground="?attr/selectableItemBackground"
+        android:theme="@style/BottomNavigationView"
+        app:itemBackground="@color/tab_color"
+        app:itemTextColor="@android:color/black"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu_values" />
+</androidx.constraintlayout.widget.ConstraintLayout>
